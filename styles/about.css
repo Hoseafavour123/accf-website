@@ -1,0 +1,239 @@
+.about-us-container {
+    padding: 5% 10%;
+}
+
+.featured {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 2px;
+    padding-bottom: 30px;
+    background: #fff;
+}
+.about-us-container .welcome{
+    margin-top: 10%;
+    text-align: center;
+    color: #f26938;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.about-us-container .purpose {
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.about-us-container img {
+    width: 100%;
+    height: 100vh;
+}
+
+.mission, .images-container {
+    background: #fff;
+    padding-top: 5px;
+    margin: 10% 0;
+}
+
+.mission .mission-images {
+    display: grid;
+    grid-template-columns: repeat(4, 260px);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.mission .purpose {
+    margin-bottom: 5%;
+}
+
+.mission .mission-images img{
+    width: 100%;
+    height: 300px;
+    display: none;
+}
+
+.mission div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    padding-bottom: 3%;
+}
+
+.mission div .units {
+    flex-basis: 30%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.prayer-req {
+    flex-basis: 60%;
+}
+
+.prayer-req a {
+    width: auto;
+    background: #f26938;
+    padding: 10px 20px;
+    position: absolute;
+    font-weight: bold;
+    text-wrap: nowrap;
+    bottom: -20%;
+    left: 0;
+    right: 70%;
+}
+
+ .prayer-req .join {
+    left: 0;
+    right: 72%;
+    padding-left: 10%;
+}
+.mission div h3 {
+    display: block;
+    position: absolute;
+    top: -13%;
+    left: 17%;
+}
+
+.mission div .units p {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px 15px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.mission div img {
+    width: 30%;
+    height: 100%;
+    margin-right: 20px;
+}
+
+
+
+.images-container p {
+    font-size: 30px;
+    text-align: center;
+}
+
+.images-container .images {
+    position: relative;
+    padding: 30px 5%;
+}
+
+.images-container .images img{
+    display: none;
+    width: 500px;
+    height: 400px;
+    margin-left: 25%;
+}
+
+.images-container .images .image:first-child {
+    display: block;
+}
+
+
+/*.next, .prev {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    bottom: 50%;
+    background: #f4f1f0;
+    width: 30px;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    transition: .6s ease;
+    border-radius: 3px;
+    user-select: none;
+}
+
+.prev {
+    left: 13%;
+    border-radius: 3px;
+}
+.next {
+    right: 14.9%;
+    border-radius: 3px;
+}
+*/
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .6;}
+    to {opacity: 1;}
+}
+
+
+@media (max-width: 900px) {
+    .about-us-container .purpose {
+        font-size: 30px;
+    }
+
+    .about-us-container {
+        padding: 1%;
+        margin: 5% 1%;
+    }
+
+    .featured {
+        padding: 2%;
+    }
+    .about-us-container .featured img{
+        width: 100%;
+        height: 300px;
+        
+    }
+    .mission div {
+        display: block;
+        padding: 2%;
+    }
+    .mission div img {
+        width: 100%;
+    }
+
+    .mission div .prayer-req {
+        padding: 10px;
+    }
+
+    .prayer-req p {
+        margin-bottom: 30px;
+    }
+    .prayer-req a {
+        position: unset;
+        margin-top: 20px;
+    }
+    .prayer-req .join {
+        margin-left: 35%;
+        padding: 5px 20px;
+    }
+
+    .mission div h3 {
+        position: unset;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .mission div a {
+        padding: 5px 20px;
+        margin-left: 22%;
+    }
+
+    .mission div .units p {
+        display: inline-block;
+        margin: 20px;
+    }
+
+    .images-container .images img{
+        width: 100%;
+        height: 400px;
+        margin: 0;
+
+    }
+}

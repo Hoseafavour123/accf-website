@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./test.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="slideshow-container">
+        <div class="my-slides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./patrick.png" style="width: 100%">
+            <div class="text">Caption Text</div>
+        </div>
+        <div class="my-slides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./ife.png" style="width: 100%">
+            <div class="text">Caption Text</div>
+        </div>
+        <div class="my-slides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./daniel.jpg" style="width: 100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <!----NEXT/PREV------>
+        <a onclick="plusSlides(-1)" class="prev"> &#10094; </a>
+        <a onclick="plusSlides(1)" class="next"> &#10095; </a>
+
+        <!---DOTS/CIRCLES-->
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <script src="./test.js"></script>
+</body>
+</html>
