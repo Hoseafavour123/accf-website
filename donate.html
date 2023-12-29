@@ -47,32 +47,15 @@
     </header>
 
    <div class="donation-container">
-        <form>
+        <form id="paymentForm">
             <h3>Empower change with your donation</h3>
             <input type="text" id="name" placeholder="Your name" required>
             <input type="email" id="email" placeholder="Email" required>
             <input type="text" id="phone" placeholder="Phone no." required>
-            <label for="amount">Select Donation Amount:</label>
-            <select name="amount" id="amount" required>
-                <option value="1.00">$1.00</option>
-                <option value="5.00">$5.00</option>
-                <option value="10.00">$10.00</option>
-                <option value="15.00">$15.00</option>
-                <option value="20.00">$20.00</option>
-                <option value="30.00">$30.00</option>
-                <option value="40.00">$40.00</option>
-                <option value="50.00">$50.00</option>
-                <option value="60.00">$60.00</option>
-                <option value="70.00">$70.00</option>
-                <option value="80.00">$80.00</option>
-                <option value="90.00">$90.00</option>
-                <option value="100.00">$100.00</option>
-            </select>
-            <textarea id="message" rows="4" placeholder="Do you have a word for us?"></textarea>
-            <button type="button" id="btn">Donate</button>
+            <input type="tel" id="amount" placeholder="Amount (NGN)" required>
+            <button type="submit" onclick="payWithPayStack()">Donate</button>
         </form>
     </div>
-    
     <!----------------FOOTER----------------------->
     <footer>
         <div class="foot">
@@ -101,7 +84,7 @@
         </div>
         <div class="copyright">Copyright &middot; 2023</div>
     </footer>
-
+    <script src="https://js.paystack.co/v1/inline.js"></script>
     <script src="./scripts/donate.js"></script>
     <script src="./scripts/index.js"></script>
 </body>
