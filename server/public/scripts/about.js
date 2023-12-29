@@ -1,7 +1,7 @@
-let slideIndex = 0;
-showSlides();
+let sIndex = 0;
+Slides();
 
-function showSlides() {
+function Slides() {
     let i;
     let slides = document.getElementsByClassName('image');
     let count = document.querySelector('image-count')
@@ -9,11 +9,11 @@ function showSlides() {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = 'none';
     }
-    slideIndex++;
+    sIndex++;
 
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
+    if (sIndex > slides.length) {
+        sIndex = 1;
     }
-    slides[slideIndex - 1].style.display = 'block';
-    setTimeout(showSlides, 2000);
+    slides[sIndex - 1].style.display = 'block';
+    setTimeout(Slides, 2000);
 }

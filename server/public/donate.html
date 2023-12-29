@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/events.css">
+    <link rel="stylesheet" href="./styles/donate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Events</title>
+    <title>Donate</title>
 </head>
 
 <body>
@@ -42,42 +42,35 @@
             </ul>
         </div>
         <div class="header-more-info">
-            <p class="p-second">EVENTS</p>
+            <p class="p-second">DONATE</p>
         </div>
     </header>
 
-    <div class="events-container">
-        <h1>Upccoming Events</h1>
-        <div class="events-div">
-            <div class="up-event">
-                <img src="./images/background.png">
-                <div class="event-desc">
-                   <p class="date"><i class="fa-regular fa-calendar-days"></i>12th - 14th January, 2024</p>
-                   <p class="title">Leadership Seminar</p>
-                   <p class="location"><i class="fa-solid fa-location-dot"></i>VET Hall 1, UniAbuja</p>
-                </div>
-                <div class="location-abs"><i class="fa-solid fa-location-dot"></i>VET Hall 1</div>
-            </div>
-            <div class="up-event">
-                <img src="./images/new-delhi.png">
-                <div class="event-desc">
-                   <p class="date"><i class="fa-regular fa-calendar-days"></i>19th - 20th May, 2024</p>
-                   <p class="title">Holy Ghost Encounter</p>
-                   <p class="location"><i class="fa-solid fa-location-dot"></i>ETF Right Wing, UniAbuja</p>
-                </div>
-                <div class="location-abs"><i class="fa-solid fa-location-dot"></i>ETF Right Wing</div>
-            </div>
-            <div class="up-event">
-                <img src="./images/image-2.png">
-                <div class="event-desc">
-                   <p class="date"><i class="fa-regular fa-calendar-days"></i>3rd - 4th April, 2024</p>
-                   <p class="title">Singles Talk (Season 2) </p>
-                   <p class="location"><i class="fa-solid fa-location-dot"></i>TETFUND block H, UniAbuja</p>
-                </div>
-                <div class="location-abs"><i class="fa-solid fa-location-dot"></i>TETFUND block H</div>
-            </div>
-        </div>
-
+   <div class="donation-container">
+        <form>
+            <h3>Empower change with your donation</h3>
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="phone" placeholder="Phone no." required>
+            <label for="amount">Select Donation Amount:</label>
+            <select name="amount" id="amount" required>
+                <option value="1.00">$1.00</option>
+                <option value="5.00">$5.00</option>
+                <option value="10.00">$10.00</option>
+                <option value="15.00">$15.00</option>
+                <option value="20.00">$20.00</option>
+                <option value="30.00">$30.00</option>
+                <option value="40.00">$40.00</option>
+                <option value="50.00">$50.00</option>
+                <option value="60.00">$60.00</option>
+                <option value="70.00">$70.00</option>
+                <option value="80.00">$80.00</option>
+                <option value="90.00">$90.00</option>
+                <option value="100.00">$100.00</option>
+            </select>
+            <textarea id="message" rows="4" placeholder="Do you have a word for us?"></textarea>
+            <button type="button" id="btn">Donate</button>
+        </form>
     </div>
     
     <!----------------FOOTER----------------------->
@@ -109,6 +102,7 @@
         <div class="copyright">Copyright &middot; 2023</div>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="./scripts/donate.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
