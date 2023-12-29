@@ -9,6 +9,5 @@ function sendMail() {
     const serviceId = "service_1999v6w";
     const templateId = "template_i3cp422";
 
-    emailjs.send(serviceId, templateId, params).then(alert('Sent sucessfully.'))
+    emailjs.send(serviceId, templateId, params).then(alert('Sent sucessfully.'));
 }
-

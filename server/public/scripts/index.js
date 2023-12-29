@@ -32,6 +32,6 @@ function showSlides(n) {
      }
 
      excoSlides[slideIndex - 1].style.display = 'block';
-     excosCount.innerHTML = `${slideIndex} / 15`;
+     excosCount.innerHTML = `${slideIndex} / 13`;
      
 }
