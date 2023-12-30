@@ -20,9 +20,10 @@ function payWithPaystack(e) {
     callback: function(response){
       let message = 'Payment complete! Reference: ' + response.reference;
       alert(message);
-      setTimeout(() => {
-        window.location = 'http://localhost:5500/';
-    }, 3000);
+
+      setInterval(() => {
+        window.location = "https://hoseafavour123.github.io/accf-website/"
+      })
     }
   });
 
